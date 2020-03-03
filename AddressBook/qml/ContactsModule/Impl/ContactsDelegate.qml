@@ -20,6 +20,7 @@ BaseListDelegate {
         anchors.verticalCenter: root.verticalCenter
         anchors.left: _contactBubble.right
         anchors.leftMargin: Style.defaultOffset
+        spacing: Style.smallSpacing
         Row {
             spacing: Style.smallSpacing
             BaseText {
@@ -34,4 +35,5 @@ BaseListDelegate {
             color: Style.primaryColor
         }
     }
+
 }

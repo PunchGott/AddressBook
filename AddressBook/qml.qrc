@@ -15,6 +15,10 @@
         <file>qml/ContactsModule/Base/RoundImage.qml</file>
         <file>qml/ResourceProvider/qmldir</file>
         <file>qml/ResourceProvider/Resources.qml</file>
-        <file>qml/resources/default-contact-icon.svg</file>
+        <file>qml/ContactsModule/Base/AboutContact.qml</file>
+        <file>qml/ContactsModule/Base/InputArea.qml</file>
+        <file>qml/resources/default_contact_icon.svg</file>
+        <file>qml/resources/test.svg</file>
+        <file>qml/ContactsModule/Base/BaseButton.qml</file>
     </qresource>
 </RCC>

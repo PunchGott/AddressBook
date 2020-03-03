@@ -3,6 +3,7 @@ import QtQuick 2.0
 
 QtObject {
     property bool isDarkTheme: true
+
     readonly property color primaryColor: isDarkTheme ? "#BB86FC" : "#6200EE"
     readonly property color primaryVariantColor: "#3700B3"
     readonly property color secondaryColor: "#03DAC6"

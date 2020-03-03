@@ -1,7 +1,7 @@
 import QtQuick 2.12
 import QtQuick.Window 2.12
-import Style 1.0
 import ContactsModule.Impl 1.0
+import Style 1.0
 
 Window {
     visible: true
@@ -15,7 +15,7 @@ Window {
 
     Rectangle {
         id: _background
-        z: -100
+        z: -1
         anchors.fill: parent
         color: Style.backgroundColor
         opacity: Style.emphasisOpacity

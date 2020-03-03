@@ -21,8 +21,8 @@ Rectangle {
     }
 
     ColorOverlay {
-        anchors.fill: root.image
-        source: image
+        anchors.fill: _internalImage
+        source: _internalImage
         color: Style.themeInvertedColor
         antialiasing: true
     }
