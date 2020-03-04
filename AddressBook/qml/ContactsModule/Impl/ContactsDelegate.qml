@@ -18,7 +18,7 @@ Rectangle {
         onSaveChanges: {
             nameText.text = name
             surnameText.text =  surname
-            phoneNumberText.text = phoneNumber
+            phoneNumberText.text = "+" + phoneNumber
         }
     }
 
