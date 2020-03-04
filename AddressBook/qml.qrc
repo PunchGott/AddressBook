@@ -6,8 +6,6 @@
         <file>qml/ContactsModule/Base/qmldir</file>
         <file>qml/ContactsModule/Impl/qmldir</file>
         <file>qml/ContactsModule/qmldir</file>
-        <file>qml/ContactsModule/Base/BaseListDelegate.qml</file>
-        <file>qml/ContactsModule/Base/BaseListView.qml</file>
         <file>qml/ContactsModule/Base/BaseText.qml</file>
         <file>qml/ContactsModule/Impl/ContactsView.qml</file>
         <file>qml/ContactsModule/Impl/ContactsDelegate.qml</file>
@@ -15,10 +13,13 @@
         <file>qml/ContactsModule/Base/RoundImage.qml</file>
         <file>qml/ResourceProvider/qmldir</file>
         <file>qml/ResourceProvider/Resources.qml</file>
-        <file>qml/ContactsModule/Base/AboutContact.qml</file>
         <file>qml/ContactsModule/Base/InputArea.qml</file>
         <file>qml/resources/default_contact_icon.svg</file>
         <file>qml/resources/test.svg</file>
         <file>qml/ContactsModule/Base/BaseButton.qml</file>
+        <file>qml/ContactsModule/Base/ContactInfo.qml</file>
+        <file>qml/ContactsModule/Impl/NewContact.qml</file>
+        <file>qml/ContactsModule/Impl/AboutContact.qml</file>
+        <file>qml/ContactsModule/Impl/NewContactButton.qml</file>
     </qresource>
 </RCC>

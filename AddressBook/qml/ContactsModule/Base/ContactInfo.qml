@@ -7,14 +7,17 @@ import Style 1.0
 Dialog {
     id: root
     visible: false;
-    title: "About Contact"
     width: 400
     height: 500
 
-    property string nameText: ""
-    property string surnameText: ""
-    property string phoneNumberText: ""
+    signal saveChanges();
 
+    property alias nameInput: nameInput
+    property alias surnameInput: surnameInput
+    property alias phoneNumberInput: phoneNumberInput
+    property alias homePhoneNumberInput: homePhoneNumberInput
+
+    property alias acceptButton: acceptButton
 
     contentItem: Rectangle {
         id: content
@@ -46,8 +49,9 @@ Dialog {
             }
 
             InputArea {
+                id: nameInput
                 width: contactImage.height * 2 - 70
-                text: nameText
+                text: ""
             }
 
             BaseText {
@@ -56,8 +60,9 @@ Dialog {
             }
 
             InputArea {
+                id: surnameInput
                 width: contactImage.height * 2 - 70
-                text: surnameText
+                text: ""
             }
 
             BaseText {
@@ -66,10 +71,11 @@ Dialog {
             }
 
             InputArea {
-                text: phoneNumberText
+                id: phoneNumberInput
+                text: ""
                 width: contactImage.height * 2 - 70
                 validator: RegExpValidator {
-                    regExp: /^(\+|0)\d{7-12}$/
+                    regExp: /^(\+|0)\d{7,12}$/
                 }
             }
 
@@ -79,7 +85,9 @@ Dialog {
             }
 
             InputArea {
+                id: homePhoneNumberInput
                 width: contactImage.height * 2 - 70
+                text: ""
             }
 
         }
@@ -91,6 +99,9 @@ Dialog {
                 BaseButton {
                     id: cancelButton
                     buttonText: qsTr("Cancel")
+                    onClicked: {
+                        root.close();
+                    }
                 }
 
                 BaseButton {

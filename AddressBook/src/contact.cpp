@@ -14,6 +14,21 @@ QString Contact::phone() const
     return m_phone;
 }
 
+void Contact::setFirstName(const QString &firstName)
+{
+    m_firstName = firstName;
+}
+
+void Contact::setSurname(const QString &surname)
+{
+    m_surname = surname;
+}
+
+void Contact::setPhone(const QString &phone)
+{
+    m_phone = phone;
+}
+
 QString Contact::firstName() const
 {
     return m_firstName;

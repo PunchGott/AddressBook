@@ -1,3 +1,6 @@
 module Impl
 ContactsView 1.0 ContactsView.qml
 ContactsDelegate 1.0 ContactsDelegate.qml
+AboutContact 1.0 AboutContact.qml
+NewContact 1.0 NewContact.qml
+NewContactButton 1.0 NewContactButton.qml
