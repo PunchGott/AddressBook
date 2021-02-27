@@ -1,13 +1,13 @@
 QT -= gui
 QT += core sql
 
-CONFIG += c++11
+CONFIG += c++17
 
 TEMPLATE = lib
 
 DEFINES += BUILD_TESTS
 
-DESTDIR = $$PDW/../shared/lib
+DESTDIR = $$PWD/../shared/lib
 
 INCLUDEPATH += $$PWD/include/
 
@@ -27,6 +27,7 @@ SOURCES += \
     src/Processor.cpp \
     src/Selector.cpp
 
+# Прописать в make install
 headers.path = $$PWD/../shared/include
 headers.files = include/dbtypes.h \
                 include/Processor.h

@@ -1,5 +1,5 @@
+# My AddressBook!
 TEMPLATE = subdirs
-
 SUBDIRS += DBManager
 SUBDIRS += Application
 

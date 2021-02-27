@@ -45,10 +45,10 @@ bool ConnectionManager::isValid() const
 }
 
 ConnectionManager::ConnectionManager()
-    : m_d {new ConnectionManagerPrivate {}}
+    :
+      m_d {new ConnectionManagerPrivate}
 {
-    const bool setupResult {m_d->setup()};
-    m_d->isValid = setupResult;
+    m_d->isValid = m_d->setup();
 }
 
 ConnectionManager::~ConnectionManager()

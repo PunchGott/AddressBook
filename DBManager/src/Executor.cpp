@@ -20,7 +20,7 @@ std::pair<DBResult, QSqlQuery> Executor::execute(const QString &queryText,
 
     QSqlQuery query {queryText};
 
-    for(size_t i = 0; i < args.size(); ++i)
+    for(auto i = 0; i < args.size(); ++i)
         query.bindValue(i, args[i]);
 
     DBResult result {DBResult::OK};

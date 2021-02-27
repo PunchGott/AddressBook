@@ -21,4 +21,5 @@ enum class DBState {
 };
 
 using DBEntry = QVariantList;
+using DBIndex = int;
 }
